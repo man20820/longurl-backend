@@ -1,6 +1,6 @@
-# Short URL Backend
+# Long URL Backend
 
-This is a simple shortlink / shorturl project. This can shorten your long url to be very short.
+This is a simple longlink / longurl project. This can longen your short url to be very long.
 
 This project written in javascript, built using expressjs framework and some library.
 
@@ -10,14 +10,14 @@ rename .env.example to .env
 
 set mongodb uri and port in env file
 
-### create shortlink
+### create longlink
 
 #### request
 
 ```bash
 Method: post
 Content-Type: application/json
-Url: host:port/api/shorturl
+Url: host:port/api/longurl
 ```
 
 ```json
@@ -31,11 +31,11 @@ Url: host:port/api/shorturl
 ```json
 {
     "original_url": "https://www.tkjpedia.com",
-    "short_url": "E_KXV77"
+    "long_url": "We4M7H-x7tCpm7RO8tS23lU9Pcf-NEL4s-IlLofN1b61kAtCgHmKUNQiFhK0k7wA7_twE43a2T4b4yqkdkMtj7fx8DlzjeIwEagWGb3zYNa8h1DuWIlXafyqgC2LOeNllxCWs5KzasIhfVAHtqHzNWLKlBsqiSG3j9TQ8eApkxuda5r_yBTYRkgadnbjloidrIf4MRqoN35-bXJo2OFe3JhkcF0ebEueYudbQ_fnFzn-uIk265TKgRl47IvPp8Zc6Q7G9xgbAnEPPHOUMnbMbEsSabCrSw6JIEVZF_nEyjvHiA9Lti3i6Diy1olyx3-3uBvgpphizkOpc2kN03KXFEKRGJwSUwo3Nl58QfrUYW32KAsaiYjDCvosfSLlZsYqG2Zy_js5tZfJpmYlQM5BNKeHp9NDU89O9kU857zAARj9YM848jjkHpqKAZdNG3Z9MjYHtqMfkIUPpN0OxYg0PhTIHTvILIAHZnlu8_ILpKTTL7exeh9qKaXsdQfqTThPsijdX9rEI6Ugpm5x5zLSrspITjGaEXKZ6lszgEEQjHBXwlXz6mlYHEJ5fMyTO08KMVHL6AH58RXft2fgN0-jUsD7zduvUGMJwJFJVyOGcTUkuF79ERrRqmia5hp8eiMoMLPAzEzpjL3QmNkMIP1lAqNRUDExy7Pp2k8WxnNuRoUCeVdhchoJdcV4Bk30w3yZ52V2dpCFlZA8xKyMFDq8PNjXCUlo_T8xFTj-lmIuWtvy1tj9pfYvJ0coPUJMFPFVweS8L8RdffHzun25w8jBtI9WBZrG50S_GRoxD46t8M3ZkfKF-9DNyjVpFZJraPymjEMjMZ_PlMfQsClYVlsii2BCqEftZvy21gusXFZQ8qYAZdyGLk5qYuQDj48Y6BV-UB8XIAnW5NkSssiqlkozFX811ZnINQn9YravYbqv4kWQXKFTiHi5Ua0GsS30SapVmvGNHFSLmxTb_VAEVne_4oXkMHzJzfl4V7iKLu-NrYKeFPi6G4SEcA4JjyhmdfOopEFCP7lzzlM26IwF4s9hzvK-Q5AZX5aqQGfutg4oJPDmXpMHgrCmnHInXRyjwjIFbwQFaQCgFCQdvv4RgvSpd0sxFKjsmJGfpLL59dyNk6TCOrKcdHfWNVq-bV1Xz7ToRJWi0VH-J5_WsLAMSoKzM7ohkOVvj9W-Nt5i_db94a1jwHXkarDeHmtXuMto1fdOAdIMi4tqFrw78ds542xzeARWJ2w24ZdxUD1WFRlh1HxrkkRblUOV1jmd-EnuRJorYk-qTz8FyW1yeMoV1E9te2SCAlaU4uK_IwzHKyqu4GfYkdibe0bBpFXs8nRHMbvukLmTxeHM7e9WqyTsU5lF3Zbxfe4jht_LP1vH8A7g3NMD0TLfw2iIOPzeAjmo2WFjsCh5B88xicmuAuNw4kKfSMI9vdOFyht6zyLcKgvWQyPugWn0qnWINtdAh5BiohcmTJcoxw31RqkKmE6z7QcmmsUWusX-VWYuNT1HEJjLv22z45a6YzxxyLF6skVkThkTsFuWaDKo7bCXSqYoUhgs-IvxEwAlXHZtkkqXiq5HW6YVzbydhkEmVLhjglO82yeJljk4yP2WBZM7DPmKyMRqNBSb_Q8iL_XzAVMIw5r3ujmmpe6LbPhFOWivq60YNyMD1dO8UOnlinhDEtBYdvb2Pu2fK90PEeCcvdBbOYQ7Cg__8Z6i9nKiImCJ0tCT0oGyOJH_ZrYFas07_Z22xcdVZmeYbgB6poVVRdqqENPK3oR8CI9NbNz-K6kkg6ojI2pGRyYkVnfRRutDh2c4QJz_bwjrcQI2dqgIibZU9Gi1_Qbqbbr3zjibv7gIHtkCaDtpJNdiwkd2uJd70WYHNQNUNDq3mhbhin8KGf9njcqVn6cucAWC2eZvQfIuBvmMIhe_Y5emXUqaLhF7Z00O4_E922MEl_e2gITEKQ2yOIxaVcrDYy9qZO0WbvH7c48Lh67l4pBIrHHmJ5WZCEQv"
 }
 ```
 
-access using web browser http://host:port/E_KXV77 will be redirect to https://www.tkjpedia.com
+access using web browser http://host:port/We4M7H-x7tCpm7RO8tS23lU9Pcf-NEL4s-IlLofN1b61kAtCgHmKUNQiFhK0k7wA7_twE43a2T4b4yqkdkMtj7fx8DlzjeIwEagWGb3zYNa8h1DuWIlXafyqgC2LOeNllxCWs5KzasIhfVAHtqHzNWLKlBsqiSG3j9TQ8eApkxuda5r_yBTYRkgadnbjloidrIf4MRqoN35-bXJo2OFe3JhkcF0ebEueYudbQ_fnFzn-uIk265TKgRl47IvPp8Zc6Q7G9xgbAnEPPHOUMnbMbEsSabCrSw6JIEVZF_nEyjvHiA9Lti3i6Diy1olyx3-3uBvgpphizkOpc2kN03KXFEKRGJwSUwo3Nl58QfrUYW32KAsaiYjDCvosfSLlZsYqG2Zy_js5tZfJpmYlQM5BNKeHp9NDU89O9kU857zAARj9YM848jjkHpqKAZdNG3Z9MjYHtqMfkIUPpN0OxYg0PhTIHTvILIAHZnlu8_ILpKTTL7exeh9qKaXsdQfqTThPsijdX9rEI6Ugpm5x5zLSrspITjGaEXKZ6lszgEEQjHBXwlXz6mlYHEJ5fMyTO08KMVHL6AH58RXft2fgN0-jUsD7zduvUGMJwJFJVyOGcTUkuF79ERrRqmia5hp8eiMoMLPAzEzpjL3QmNkMIP1lAqNRUDExy7Pp2k8WxnNuRoUCeVdhchoJdcV4Bk30w3yZ52V2dpCFlZA8xKyMFDq8PNjXCUlo_T8xFTj-lmIuWtvy1tj9pfYvJ0coPUJMFPFVweS8L8RdffHzun25w8jBtI9WBZrG50S_GRoxD46t8M3ZkfKF-9DNyjVpFZJraPymjEMjMZ_PlMfQsClYVlsii2BCqEftZvy21gusXFZQ8qYAZdyGLk5qYuQDj48Y6BV-UB8XIAnW5NkSssiqlkozFX811ZnINQn9YravYbqv4kWQXKFTiHi5Ua0GsS30SapVmvGNHFSLmxTb_VAEVne_4oXkMHzJzfl4V7iKLu-NrYKeFPi6G4SEcA4JjyhmdfOopEFCP7lzzlM26IwF4s9hzvK-Q5AZX5aqQGfutg4oJPDmXpMHgrCmnHInXRyjwjIFbwQFaQCgFCQdvv4RgvSpd0sxFKjsmJGfpLL59dyNk6TCOrKcdHfWNVq-bV1Xz7ToRJWi0VH-J5_WsLAMSoKzM7ohkOVvj9W-Nt5i_db94a1jwHXkarDeHmtXuMto1fdOAdIMi4tqFrw78ds542xzeARWJ2w24ZdxUD1WFRlh1HxrkkRblUOV1jmd-EnuRJorYk-qTz8FyW1yeMoV1E9te2SCAlaU4uK_IwzHKyqu4GfYkdibe0bBpFXs8nRHMbvukLmTxeHM7e9WqyTsU5lF3Zbxfe4jht_LP1vH8A7g3NMD0TLfw2iIOPzeAjmo2WFjsCh5B88xicmuAuNw4kKfSMI9vdOFyht6zyLcKgvWQyPugWn0qnWINtdAh5BiohcmTJcoxw31RqkKmE6z7QcmmsUWusX-VWYuNT1HEJjLv22z45a6YzxxyLF6skVkThkTsFuWaDKo7bCXSqYoUhgs-IvxEwAlXHZtkkqXiq5HW6YVzbydhkEmVLhjglO82yeJljk4yP2WBZM7DPmKyMRqNBSb_Q8iL_XzAVMIw5r3ujmmpe6LbPhFOWivq60YNyMD1dO8UOnlinhDEtBYdvb2Pu2fK90PEeCcvdBbOYQ7Cg__8Z6i9nKiImCJ0tCT0oGyOJH_ZrYFas07_Z22xcdVZmeYbgB6poVVRdqqENPK3oR8CI9NbNz-K6kkg6ojI2pGRyYkVnfRRutDh2c4QJz_bwjrcQI2dqgIibZU9Gi1_Qbqbbr3zjibv7gIHtkCaDtpJNdiwkd2uJd70WYHNQNUNDq3mhbhin8KGf9njcqVn6cucAWC2eZvQfIuBvmMIhe_Y5emXUqaLhF7Z00O4_E922MEl_e2gITEKQ2yOIxaVcrDYy9qZO0WbvH7c48Lh67l4pBIrHHmJ5WZCEQv will be redirect to https://www.tkjpedia.com
 
 
 ## Docker
@@ -45,18 +45,18 @@ access using web browser http://host:port/E_KXV77 will be redirect to https://ww
 clone this repository
 
 ```bash
-git clone https://github.com/man20820/shorturl-backend.git
+git clone https://github.com/man20820/longurl-backend.git
 ```
 
 build docker image and run the container
 
 ```bash
-docker build . -t man20820/shorturl-backend
+docker build . -t man20820/longurl-backend
 ```
 run container
 
 ```bash
-docker run -e MONGO_URI=[mongo_uri] -e PORT=80 -p 0.0.0.0:80:80/tcp man20820/shorturl-backend
+docker run -e MONGO_URI=[mongo_uri] -e PORT=80 -p 0.0.0.0:80:80/tcp man20820/longurl-backend
 ```
 
 or run via docker compose, rename docker-compose.yml.example to docker-compose.yml and modify MONGO_URI & PORT inside it. 
@@ -68,12 +68,12 @@ docker compose up -d
 ### download from registry
 
 ```bash
-docker pull man20820/shorturl-backend
+docker pull man20820/longurl-backend
 ```
 run container
 
 ```bash
-docker run -e MONGO_URI=[mongo_uri] -e PORT=80 -p 0.0.0.0:80:80/tcp man20820/shorturl-backend
+docker run -e MONGO_URI=[mongo_uri] -e PORT=80 -p 0.0.0.0:80:80/tcp man20820/longurl-backend
 ```
 
 or run via docker compose, rename docker-compose.yml.example to docker-compose.yml and modify MONGO_URI & PORT inside it. 

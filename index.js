@@ -23,7 +23,7 @@ mongoose.connect(uri, {
 const Schema = mongoose.Schema;
 const urlSchema = new Schema({
   original_url: String,
-  short_url: String,
+  long_url: String,
 });
 const URL = mongoose.model("URL", urlSchema);
 
@@ -38,9 +38,9 @@ app.route("/").get((req, res) => {
 });
 
 //api
-app.route("/api/shorturl/").post(async (req, res) => {
+app.route("/api/longurl/").post(async (req, res) => {
   const url = req.body.url;
-  let urlCode = nanoid(7);
+  let urlCode = nanoid(2000);
   console.log(url);
   //validasi url
   if (!validUrl.isWebUri(url)) {
@@ -56,18 +56,18 @@ app.route("/api/shorturl/").post(async (req, res) => {
       if (Data) {
         res.json({
           original_url: Data.original_url,
-          short_url: Data.short_url,
+          long_url: Data.long_url,
         });
       } else {
         //membuat data
         Data = new URL({
           original_url: url,
-          short_url: urlCode,
+          long_url: urlCode,
         });
         await Data.save();
         res.json({
           original_url: Data.original_url,
-          short_url: Data.short_url,
+          long_url: Data.long_url,
         });
       }
     } catch (err) {
@@ -80,7 +80,7 @@ app.route("/api/shorturl/").post(async (req, res) => {
 app.route("/:url").get(async (req, res) => {
   try {
     let urlParams = await URL.findOne({
-      short_url: req.params.url,
+      long_url: req.params.url,
     });
     console.log(req.params.url);
     if (urlParams) {
